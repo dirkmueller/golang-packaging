@@ -1,14 +1,28 @@
-   * golang.sh: Don't throw an error on prep if $(get_gocontrib_path) does not exist.
+== update version 15.0.16 ==
+
+  * golang.sh: Don't throw an error on prep if $(get_gocontrib_path) does not exist.
+  * golang.sh: Enable -buildmode=pie on riscv64
+  * packaging: Fixed if statement in spec file
+
+== update version 15.0.15 ==
+
+  * Only create directories that do not yet exist
+  * filelelist can try to access source_dir independently
+
+== update version 15.0.14 ==
+
+  * Ensure to touch $RPM_BUILD_ROOT only in the various install phases
+  * Add support for riscv64
 
 == update version 15.0.13 ==
 
-   * golang.sh: Preserve modification time of source files for reproducible builds
+  * golang.sh: Preserve modification time of source files for reproducible builds
 
 == update version 15.0.12 ==
 
-   * golang.sh: integrate ppc64-nopie.patch -buildmode=pie only on ppc64
-   * golang.sh: avoid excessive "rpm --eval..." calls
-   * Install Bazel files in src directory
+  * golang.sh: integrate ppc64-nopie.patch -buildmode=pie only on ppc64
+  * golang.sh: avoid excessive "rpm --eval..." calls
+  * Install Bazel files in src directory
 
 == update version 15.0.11 ==
 
