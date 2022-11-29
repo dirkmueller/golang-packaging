@@ -199,6 +199,7 @@ process_source() {
   local files=$(find $(get_build_path)/src \
     -type f \
     \( -iname "*.go" \
+    -o -iname "*.proto" \
     -o -iname "*.s" \
     -o -iname "*.h" \
     -o -iname "BUILD" \
